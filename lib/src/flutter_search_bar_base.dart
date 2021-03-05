@@ -150,13 +150,13 @@ class SearchBar {
         child: TextField(
           key: Key('SearchBarTextField'),
           keyboardType: TextInputType.text,
+          style: TextStyle(fontSize: 15),
           decoration: InputDecoration(
               hintText: hintText,
               hintStyle: inBar
                   ? null
                   : TextStyle(
-                      color: theme.textTheme.headline4.color,
-                    ),
+                      color: theme.textTheme.headline4.color, fontSize: 15),
               enabledBorder: InputBorder.none,
               focusedBorder: InputBorder.none,
               border: InputBorder.none),
